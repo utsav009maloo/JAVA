@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>valide</servlet-name>
+        <servlet-class>valide</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>weladmin</servlet-name>
+        <servlet-class>weladmin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>welstu</servlet-name>
+        <servlet-class>welstu</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>weltea</servlet-name>
+        <servlet-class>weltea</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>valide</servlet-name>
+        <url-pattern>/valide</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>weladmin</servlet-name>
+        <url-pattern>/weladmin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>welstu</servlet-name>
+        <url-pattern>/welstu</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>weltea</servlet-name>
+        <url-pattern>/weltea</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
